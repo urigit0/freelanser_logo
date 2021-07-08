@@ -1,0 +1,30 @@
+//------------------------ШРИФТЫ-----------------------------------
+// @mixin font($fnt_family, $fnt_file, $fnt_weight, $fnt_style) {
+//    @font-face {
+//       font-family: $fnt_family;
+//       src: url("../fonts/" + $fnt_file + ".woff") format("woff"),
+//          url("../fonts/" + $fnt_file + ".ttf") format("truetype");
+//       font-weight: $fnt_weight;
+//       font-style: $fnt_style;
+//    }
+// }
+// @include font("Lato", "Lato-Light", 300, normal);
+
+//------------------ОБШИЕ ПАРАМЕТРЫ--------------------------------
+body {
+}
+
+//-----------------------------ОБОЛОЧКА ----------------------------------
+.wrapper {
+   max-width: 1600px;
+   margin: 0 auto;
+}
+.container {
+   max-width: 1100px;
+   padding: 0px 15px;
+}
+//------------------------------HEADER------------------------------------
+@import "normalize.scss";
+// @import "header.scss";
+// @import "footer.scss";
+//------------------------------ABOUT US----------------------------------
