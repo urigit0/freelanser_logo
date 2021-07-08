@@ -3,7 +3,7 @@ let source_folder = "#src";
 
 let parth = {
    build: {
-      html: project_folder + "/html/",
+      html: project_folder + "/",
       css: project_folder + '/css/',
       js: project_folder + '/js/',
       img: project_folder + '/img/',
@@ -17,7 +17,7 @@ let parth = {
       fonts: source_folder + '/fonts/*.ttf',
    },
    watch: {
-      html: source_folder + "/html/*.html",
+      html: source_folder + "/**/*.html",
       scss: source_folder + '/scss/**/*.scss',
       js: source_folder + '/js/**/*.js',
       img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
