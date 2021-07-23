@@ -4,23 +4,23 @@ let source_folder = "#src";
 let parth = {
    build: {
       html: project_folder + "/",
-      css: project_folder + '/css/',
-      js: project_folder + '/js/',
-      img: project_folder + '/img/',
+      css: project_folder + '/',
+      js: project_folder + '/',
+      img: project_folder + '/',
       fonts: project_folder + '/fonts/'
    },
    src: {
       html: source_folder + "/index.html",
-      scss: source_folder + '/scss/index.scss',
-      js: source_folder + '/js/index.js',
-      img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
+      scss: source_folder + '/**/index.scss',
+      js: source_folder + '/**/index.js',
+      img: source_folder + '/**/*.{jpg,png,svg,gif,ico,webp}',
       fonts: source_folder + '/fonts/*.ttf',
    },
    watch: {
       html: source_folder + "/**/*.html",
-      scss: source_folder + '/scss/**/*.scss',
-      js: source_folder + '/js/**/*.js',
-      img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
+      scss: source_folder + '/**/*.scss',
+      js: source_folder + '/**/*.js',
+      img: source_folder + '/**/*.{jpg,png,svg,gif,ico,webp}',
       fonts: source_folder + '/fonts/*.ttf',
    },
    clean: "./" + project_folder + "/"
@@ -82,15 +82,20 @@ function js() {                                 // обработка html
 
 function images() {                             // обработка картинок
    return src(parth.src.img)                    // берем отсюда
+      .pipe(                                    //переименовываем
+         rename({
+            dirname: "/img"
+         })
+      )
       .pipe(dest(parth.build.img))              // ложим сюда
-      .pipe(src(parth.src.img))
       .pipe(
          webp({
             quality: 70                         // конвертируем в webp
          })
       )
       .pipe(dest(parth.build.img))              // ложим сюда
-      .pipe(src(parth.src.img))                 // берем отсюда
+      // .pipe(src(parth.src.img))                 // берем отсюда
+       
       // .pipe(                                    // сжимаем
       //    imagemin({
       //       progressive: true,
@@ -99,10 +104,9 @@ function images() {                             // обработка карти
       //       optimizationLevel: 3
       //    })
       // )
-      .pipe(dest(parth.build.img))              // ложим сюда
+      // .pipe(dest(parth.build.img))              // ложим сюда      
       .pipe(browsersync.stream())               // обновляем
 }
-
 function css() {                                // обработка css
    return src(parth.src.scss)                   // берем отсюда
       .pipe(

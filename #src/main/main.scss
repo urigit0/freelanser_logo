@@ -1,0 +1,132 @@
+.main {
+}
+.container--main {
+   display: flex;
+   padding-top: 10px;
+}
+.aside {
+   flex-basis: 23%;
+}
+.aside__katalog {
+}
+.aside-katalog {
+   padding: 16px 21px 21px 21px;
+   background-image: url(img/main_side_menu_bg.jpg);
+}
+.aside-kataog__header {
+   display: flex;
+}
+.aside-katalog__title {
+   font-family: uniSans;
+   font-size: 30px;
+   line-height: 1.2;
+   font-weight: 900;
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+   color: #ffffff;
+   margin: 0;
+}
+.aside-katalog__burger {
+   // margin-top: 21px;
+   align-self: center;
+}
+.aside-katalog__menu {
+}
+.aside-catalog__list {
+   list-style: none;
+   padding: 0;
+   margin-top: 8px;
+}
+.aside-katalog__item {
+}
+.aside-katalog__link {
+   font-family: Roboto;
+   font-size: 12px;
+   line-height: 40px;
+   font-weight: 300;
+   letter-spacing: 0.025em;
+   color: #ffffff;
+   text-decoration: none;
+}
+.aside-katalog__item--arrow {
+}
+.aside-katalog__item--active {
+}
+.aside-katalog__link {
+}
+.aside__pop-up-menu {
+}
+.aside-pop-up-menu {
+}
+.aside-pop-up-menu__menu {
+}
+.aside-pop-up-menu__list {
+}
+.aside-pop-up-menu__item {
+}
+.aside-pop-up-menu__item--active {
+}
+.aside-pop-up-menu__link {
+}
+.aside-pop-up-menu__line {
+}
+.aside-pop-up-menu__recomend {
+}
+.asideRecomend {
+}
+.asideRecomend__title {
+}
+.asideRecomend__img {
+}
+.asideRecomend__descript {
+}
+.asideRecomend__footer {
+}
+.asideRecomend__prise {
+}
+.asideRecomend__currency {
+}
+.aside__news {
+}
+.aside-news {
+}
+.aside-news__title {
+}
+.aside-news__list {
+}
+.aside-news__item {
+}
+.aside-news__item--active {
+}
+.aside-news__item-title {
+}
+.aside-news__block {
+}
+.aside-news__item-date {
+}
+.aside-news__item-txt {
+}
+.aside__feedback {
+}
+.aside-feedback {
+}
+.aside-feedback__title {
+}
+.aside-feedback__list {
+}
+.aside-feedback__item {
+}
+.aside-feedback__item-block {
+}
+.aside-feedback__item-name {
+}
+.aside-feedback__item-date {
+}
+.aside-feedback__item-text {
+}
+.aside-feedback__item--active {
+}
+.main-content {
+}
+.main-content--poz {
+}
